@@ -35,6 +35,7 @@ function stop() {
 }
 function reset() {
   time = 0;
+  result.textContent = time;
 }
 let time = 0;
 function tick() {
