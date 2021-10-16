@@ -23,6 +23,7 @@ omikujiButton.onclick = omikuji;
 
 let startButton = document.getElementById("start-button");
 let stopButton = document.getElementById("stop-button");
+let resetButton = document.getElementById("reset-button");
 let result = document.getElementById("result");
 let timerId;
 
@@ -31,6 +32,9 @@ function start() {
 }
 function stop() {
   clearInterval(timerId);
+}
+function reset() {
+  time = 0;
 }
 let time = 0;
 function tick() {
@@ -43,3 +47,4 @@ function timer() {
 
 startButton.onclick = start;
 stopButton.onclick = stop;
+resetButton.onclick = reset;
